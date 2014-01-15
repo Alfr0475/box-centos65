@@ -23,7 +23,7 @@ VBoxManage modifyvm ${NAME} \
     --bioslogodisplaytime 0 \
     --biosbootmenu disabled
 
-VBoxManage createhd --format VMDK --size 8192 --filename "${HDD}"
+VBoxManage createhd --format VMDK --size 73728 --filename "${HDD}"
 
 VBoxManage storagectl ${NAME} \
     --name SATA --add sata --portcount 2 --bootable on
