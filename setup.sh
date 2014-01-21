@@ -46,7 +46,7 @@ echo " ks=http://${IP}.3:8081"
 sh ./httpd.sh | nc -l 8081 >/dev/null
 
 
-![ -e boxes ] && mkdir boxes
+! [ -e boxes ] && mkdir boxes
 
 echo When finished:
 echo "./cleanup.sh && vagrant package --base ${NAME} --output boxes/${NAME}-`date -j +%Y%m%d`.box"
