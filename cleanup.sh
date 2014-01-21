@@ -1,5 +1,5 @@
 #!/bin/sh
-source vars.sh
+source ./vars.sh
 
 set -x
 
